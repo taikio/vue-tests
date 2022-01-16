@@ -4,20 +4,27 @@
    <div class="component-box">
     <search-input v-model="search" />
    </div>
+
+   <div class="component-box">
+     <toggle-button label="Deseja habilitar esta opção?" v-model="toggle" />
+   </div>
   </div>
 </template>
 
 <script>
 import SearchInput from './components/search-input/index.vue'
+import ToggleButton from './components/toggle-button/index.vue'
 
 export default {
   name: 'App',
   components: {
-    SearchInput
+    SearchInput,
+    ToggleButton
   },
   data() {
     return {
-      search: ''
+      search: '',
+      toggle: false
     }
   }
 }
@@ -42,5 +49,6 @@ export default {
 
 .component-box {
   width: 30%;
+  margin-top: 16px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="input">
-    <input type="text" placeholder="Pesquisar..." v-model="searchQuery" />
+    <input type="text" placeholder="Pesquisar...." v-model="searchQuery" />
 
     <span class="input__clear" @click="clearValue()">&times;</span>
   </div>
